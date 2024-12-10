@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    color: var(--Gray-950);
+    line-height: 1.5;
+}
+
+.text-preset-1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.text-preset-2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.text-preset-3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.text-preset-3-bold {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+  
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding-inline: 2.8rem;
+    background-color: var(--Yellow);
+    display: grid;
+    place-items: center;
+}
+
+.attribution {
+    position: fixed;
+    right: .6rem;
+    bottom: .6rem;
+    font-size: 1.4rem;
+    color: var(--Gray-950);
+    a {
+        text-decoration: none;
+        color: var(--Gray-500);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.card {
+    background-color: var(--White);
+    padding: 2.4rem;
+    max-width: 38.4rem;
+    width: 100%;
+    border-radius: 2rem;
+    border: 1px solid var(--Gray-950);
+    position: relative;
+    box-shadow: .8rem .8rem 0 var(--Gray-950);
+}
+.card-image {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    margin-block: 2.4rem;
+    row-gap: 1.2rem;
+    .badge {
+        padding-block: .4rem;
+        padding-inline: 1.2rem;
+        border-radius: .4rem;
+        background-color: var(--Yellow);
+        width: fit-content;
+        height: fit-content;
+    }
+    .title {
+        transition: color .2s ease;
+        cursor: pointer;
+    }
+    .title:hover, .title:active, .title:focus {
+        color: var(--Yellow);
+    }
+    .description {
+        color: var(--Gray-500);
+    }
+}
+.profile {
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+    .profile-image {
+        --profile-size: 3.2rem;
+        width: var(--profile-size);
+        height: var(--profile-size);
+    }
+}
+
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 450px) {
+    .text-preset-1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .text-preset-2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    
+    .text-preset-3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+    .text-preset-3-bold {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    .attribution {
+        font-size: 1.2rem;
+        margin-inline: 2.8rem;
+    }
+}
+
+
+
