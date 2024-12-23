@@ -53,7 +53,7 @@ main {
     place-items: center;
 }
 
-.attribution {
+.attribution h1 {
     position: fixed;
     right: .6rem;
     bottom: .6rem;
