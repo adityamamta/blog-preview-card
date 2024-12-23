@@ -86,7 +86,7 @@ main {
     border-radius: 1rem;
 }
 
-figcaption {
+.caption {
     display: flex;
     flex-direction: column;
     margin-block: 2.4rem;
